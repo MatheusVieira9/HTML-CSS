@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <h1>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midia/World-War.mp3" controls autoplay></audio>-->
+    <!--mp3 WAV ogg-->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/World-War.mp3" type="audio/mpeg">
+        <source src="midia/World-War.ogg" type="audio/ogg">
+        <source src="midia/World-War.wav" type="audio/wav"> <!--Arquivos wav são muito pesados melhor não usar-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/World-War.mp3">Clique aqui</a> para baixar o arquivo mp3</p>
+    </audio>
+</body>
+</html>

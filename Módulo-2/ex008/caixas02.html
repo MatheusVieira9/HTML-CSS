@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(161, 161, 161);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+        }
+        nav {
+            background-color: rgb(161, 161, 161);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black; /* deslo. horizontal, deslo. vertical, blur, spread, cor.  Opçõe de inset. */
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            margin-right: 20px;
+            border: 22px;
+        }
+        a:hover {
+            color: rgb(255, 255, 255);
+        }
+        main {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px 5px 1px 1px;
+        }
+        #noticias {
+            background-color: rgb(211, 210, 210);
+            padding: 2px;
+            border-radius: 5px;
+        }
+        aside {
+            background-color: rgb(148, 148, 148);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+        footer > p {
+            margin: 0px;
+        }       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Geopolitica dos países</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre São Paulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam officiis facilis explicabo deserunt aliquid perspiciatis nam fuga, adipisci vitae asperiores voluptatem, sapiente vero excepturi iure porro dolor totam culpa. Iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam, temporibus voluptatibus quod earum excepturi quos rerum esse quisquam vel qui beatae sunt aliquam a similique consequuntur pariatur, veniam distinctio?</p>
+                <aside>
+                    <p>Artigo escrito por alguém</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Matheus</p>
+    </footer>
+</body>
+</html>

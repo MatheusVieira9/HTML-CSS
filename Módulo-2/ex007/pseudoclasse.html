@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        @font-face {
+            font-family: 'pokemon';
+            src: url(Pokemon\ Hollow.ttf) format('truetype'), url(Pokemon\ Solid.ttf) format('truetype');
+        }
+        div > p {   /* Definindo o parágrafo filho da div como item oculto */
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+        }
+        div { 
+            display: inline-block;
+            background-color: black;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        /* Pseudo-classes são palavras que definem estado de elemento dentro da HTML, exemplo abaixo da  Pseudo-classe Hover */ 
+        #prime:hover {  
+            background-color: aqua;
+            font-family: 'pokemon';
+            color: black;
+            font-size: 20px;
+        }
+        #secon:hover {
+            background-color: blueviolet;
+            font: 20px 'pokemon';
+            color: black;
+        }
+        #terc:hover {
+            background-color: brown;
+            font-family: 'pokemon';
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="prime">
+        01
+        <p>Número um</p>
+    </div>
+    <div id="secon">
+        02
+        <p>Número dois</p>
+    </div>
+    <div id="terc">
+        03
+        <p>Número três</p>
+    </div>
+</body>
+</html>
